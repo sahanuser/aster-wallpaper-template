@@ -23,4 +23,12 @@ jobs:
       - name: execute py script # run main.py
         run: python downloadimg.py
         
+      - name: Commit report
+        run: |
+          git add .
+          git config --global user.name 'asterlinux'
+          git config --global user.email 'asterlinux@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
+        
         
