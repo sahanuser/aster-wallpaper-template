@@ -4,4 +4,4 @@ wget
 matplotlib
 numpy
 pandas
-
+requests
