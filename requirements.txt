@@ -1,0 +1,7 @@
+seaborn
+shutils
+wget
+matplotlib
+numpy
+pandas
+
