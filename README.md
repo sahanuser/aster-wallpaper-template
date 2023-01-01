@@ -15,3 +15,7 @@
 For more information visit --> https://crontab.guru
 
 
+## TO make aster-wallpaper packge run folliwing bash script
+            ./makepkg
+            
+it will make pkg build
