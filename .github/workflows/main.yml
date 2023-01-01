@@ -30,6 +30,6 @@ jobs:
           git_token: '${{ secrets.GIT_TOKEN }}'
           commit_user: 'asterlinux'
           commit_email: 'sahan.user@gmail.com'
-          push_dir: 'aster-wallpaper'
+          push_dir: '.'
           repository_url: 'github.com/asterlinux/aster-wallpapers.git'
         
