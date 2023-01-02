@@ -10,9 +10,11 @@ import os
 
 url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
 r = requests.get(url,params = {"hd": "True"})
+
+title = d + "_" + r["title"].replace(" ","_").replace(":","_") + ".jpg"
+
 data = ast.literal_eval(r.content.decode('utf-8'))
 print(data["url"])
-name = wget.download(data["url"])
-print (name)
-destination = f"aster-wallpaper/usr/share/backgrounds/asterlinux/{name}"
+wget.download(data["url"])
+destination = f"aster-wallpaper/usr/share/backgrounds/asterlinux/{title}"
 shutil.move(name,destination)
