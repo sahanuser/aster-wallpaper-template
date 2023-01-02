@@ -1,5 +1,5 @@
 # Maintainer: Sahan Rasanjana <sahan.user@gmail.com>
-pkgname=('aster-wallpapers')
+pkgname=('aster-wallpaper')
 pkgver=1
 pkgrel=1
 _destname="/usr"
@@ -17,5 +17,5 @@ pkgver() {
 
 package() {
         install -dm755 ${pkgdir}${_destname}
-        cp -r ${srcdir}/${pkgname}/${_destname}/* ${pkgdir}${_destname}
+        cp -r ${srcdir}/${pkgname}${_destname}/* ${pkgdir}${_destname}
 }
