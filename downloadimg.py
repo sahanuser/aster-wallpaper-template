@@ -12,7 +12,7 @@ url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
 r = requests.get(url,params = {"hd": "True"})
 
 data = ast.literal_eval(r.content.decode('utf-8'))
-title = data["title"]
+title = data["title"].replace(" ","_").replace(":","_")
 print(title)
 print(data["url"])
 name = wget.download(data["url"])
