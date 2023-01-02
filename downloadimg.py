@@ -9,7 +9,7 @@ import shutil
 import os
 
 url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
-r = requests.get(url,params = {"hd": "True"})
+r = requests.get(url,params = {"hd": "True","date": "2022-12-31"})
 
 data = ast.literal_eval(r.content.decode('utf-8'))
 title = data["title"].replace(" ","_").replace(":","_")
