@@ -15,6 +15,6 @@ data = ast.literal_eval(r.content.decode('utf-8'))
 title = data["title"]
 print(title)
 print(data["url"])
-wget.download(data["url"])
+name = wget.download(data["url"])
 destination = f"aster-wallpaper/usr/share/backgrounds/asterlinux/{title}.jpg"
 shutil.move(name,destination)
