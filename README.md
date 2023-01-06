@@ -1,5 +1,7 @@
 # aster-wallpaper-template
 
+! warning these images are not clear if you want try it on 
+
 ### You can use this script to download images from nasa api daily using github actions
 ### to configure change folliging USERNAME
             >  git config --global user.name 'USERNAME'
